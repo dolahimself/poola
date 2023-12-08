@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {View, Text, Image, useColorScheme} from 'react-native';
+import {View, useColorScheme} from 'react-native';
 import Video from 'react-native-video';
 import FastImage from 'react-native-fast-image';
 import Ionic from 'react-native-vector-icons/Ionicons';
@@ -62,7 +62,7 @@ const Reel = ({
           repeat={true}
           resizeMode="cover"
           paused={currentIndex == index ? false : true}
-          source={item.video}
+          source={{uri: item.video}}
           muted={mute}
           style={{
             flex: 1,
