@@ -1,20 +1,21 @@
-import { Dimensions, PixelRatio } from "react-native";
-import { RFPercentage } from "react-native-responsive-fontsize";
+import {Dimensions, PixelRatio} from 'react-native';
+import {RFPercentage} from 'react-native-responsive-fontsize';
 import {
   widthPercentageToDP as wdp,
   heightPercentageToDP as hdp,
-} from "react-native-responsive-screen";
+} from 'react-native-responsive-screen';
 
-export const width = Dimensions.get("screen").width;
-export const height = Dimensions.get("screen").height;
+export const width = Dimensions.get('screen').width;
+export const height = Dimensions.get('screen').height;
 
 const customWidth = 1133;
 const customHeight = 744;
+export const ASPECT_RATIO = width / height;
 
 export const widthPercentageToDP = (widthPercent: number | string) => {
   // Parse string percentage input and convert it to number.
   const elemWidth =
-    typeof widthPercent === "number" ? widthPercent : parseFloat(widthPercent);
+    typeof widthPercent === 'number' ? widthPercent : parseFloat(widthPercent);
 
   // Use PixelRatio.roundToNearestPixel method in order to round the layout
   // size (dp) to the nearest one that correspons to an integer number of pixels.
@@ -24,7 +25,7 @@ export const widthPercentageToDP = (widthPercent: number | string) => {
 export const heightPercentageToDP = (heightPercent: number | string) => {
   // Parse string percentage input and convert it to number.
   const elemHeight =
-    typeof heightPercent === "number"
+    typeof heightPercent === 'number'
       ? heightPercent
       : parseFloat(heightPercent);
 
@@ -54,4 +55,4 @@ export const fontSz = (val: number) => RFPercentage(val / 8.5);
 export const formatAsCurrency = (value: number) =>
   parseFloat(String(value))
     .toFixed(2)
-    .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ',');

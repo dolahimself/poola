@@ -1,10 +1,10 @@
 import React, {useRef, useState} from 'react';
-import {View, useColorScheme} from 'react-native';
+import {View, useColorScheme, Platform} from 'react-native';
 import Video from 'react-native-video';
 import FastImage from 'react-native-fast-image';
 import Ionic from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import {fontSz, height, hp, width, wp} from '../../utils';
+import {fontSz, height, hp, width, wp, ASPECT_RATIO} from '../../utils';
 import {CustomPressable} from '../Pressable';
 import {
   CommentReelIcon,
@@ -62,7 +62,7 @@ const Reel = ({
           repeat={true}
           resizeMode="cover"
           paused={currentIndex == index ? false : true}
-          source={{uri: item.video}}
+          source={item.video}
           muted={mute}
           style={{
             flex: 1,
@@ -89,7 +89,7 @@ const Reel = ({
           position: 'absolute',
           width: width,
           zIndex: 1,
-          bottom: hp(70), //edited
+          bottom: Platform.OS === 'ios' ? fontSz(90) : fontSz(70), //edited
           paddingHorizontal: wp(10),
         }}>
         <View style={{}}>
@@ -111,7 +111,6 @@ const Reel = ({
                   style={{
                     width: '100%',
                     height: '100%',
-
                     borderRadius: 100,
                   }}
                   source={{
@@ -171,7 +170,7 @@ const Reel = ({
       <View
         style={{
           position: 'absolute',
-          bottom: hp(70), //edited
+          bottom: Platform.OS === 'ios' ? fontSz(90) : fontSz(70),
           right: 0,
         }}>
         <CustomPressable
@@ -225,8 +224,8 @@ const Reel = ({
         </CustomPressable>
         <View
           style={{
-            width: 30,
-            height: 30,
+            width: fontSz(30),
+            height: fontSz(30),
             borderRadius: 10,
             borderWidth: 2,
             borderColor: 'white',

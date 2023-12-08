@@ -1,7 +1,7 @@
 export const videos = [
   {
-    video:
-      'https://res.cloudinary.com/djwv6cxbp/video/upload/v1702065597/instagram/azp7lgxpkhhm3hv0wtxd.mp4',
+    video: require('../assets/videos/video2.mp4'),
+    // 'https://res.cloudinary.com/djwv6cxbp/video/upload/v1702065597/instagram/azp7lgxpkhhm3hv0wtxd.mp4',
     postProfile: 'https://instagram.com/p/65LDpGm-MU/',
     title: 'dolahimself',
     description: "It's a tea time",
@@ -9,8 +9,8 @@ export const videos = [
     isLike: false,
   },
   {
-    video:
-      'https://res.cloudinary.com/djwv6cxbp/video/upload/v1702065526/instagram/dbkqffyp8lqqbbnwgo78.mp4',
+    video: require('../assets/videos/video2.mp4'),
+    // 'https://res.cloudinary.com/djwv6cxbp/video/upload/v1702065526/instagram/dbkqffyp8lqqbbnwgo78.mp4',
     postProfile: 'https://instagram.com/p/65ROUWNWAe/',
     title: 'satcey1992',
     description: 'How cute it is !!',
@@ -18,8 +18,8 @@ export const videos = [
     isLike: false,
   },
   {
-    video:
-      'https://res.cloudinary.com/djwv6cxbp/video/upload/v1702065526/instagram/cbjg3gvrghlpfzuqretg.mp4',
+    video: require('../assets/videos/video2.mp4'),
+    // 'https://res.cloudinary.com/djwv6cxbp/video/upload/v1702065526/instagram/cbjg3gvrghlpfzuqretg.mp4',
     postProfile: 'https://instagram.com/p/65PSDdzTfG/',
     title: 'donald_trump',
     description: 'Feel the buity of nature',
@@ -27,8 +27,8 @@ export const videos = [
     isLike: false,
   },
   {
-    video:
-      'https://res.cloudinary.com/djwv6cxbp/video/upload/v1702065598/instagram/s3reibdscw53zg7anieg.mp4',
+    video: require('../assets/videos/video2.mp4'),
+    // 'https://res.cloudinary.com/djwv6cxbp/video/upload/v1702065598/instagram/s3reibdscw53zg7anieg.mp4',
     postProfile: 'https://instagram.com/p/65S1D8AJKt/',
     title: 'chan_calogero',
     description: 'Feel the buity of nature',
