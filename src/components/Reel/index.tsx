@@ -89,7 +89,7 @@ const Reel = ({
           position: 'absolute',
           width: width,
           zIndex: 1,
-          bottom: Platform.OS === 'ios' ? fontSz(90) : fontSz(70), //edited
+          bottom: Platform.OS === 'ios' ? fontSz(90) : hp(120), //edited
           paddingHorizontal: wp(10),
         }}>
         <View style={{}}>
@@ -170,7 +170,7 @@ const Reel = ({
       <View
         style={{
           position: 'absolute',
-          bottom: Platform.OS === 'ios' ? fontSz(90) : fontSz(70),
+          bottom: Platform.OS === 'ios' ? fontSz(90) : hp(120),
           right: 0,
         }}>
         <CustomPressable
